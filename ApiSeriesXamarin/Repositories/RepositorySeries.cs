@@ -26,6 +26,11 @@ namespace ApiSeriesXamarin.Repositories
             return this.context.Series.FirstOrDefault(x => x.IdSerie == id);
         }
 
+        public List<Serie> FindYearSeries(int year)
+        {
+            return this.context.Series.Where(x => x.Anyo == year).ToList();
+        }
+
         private int GetMaxIdSerie()
         {
             return this.context.Series.Max(z => z.IdSerie) + 1;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApiSeriesXamarin.Models
 {
-    [Table("SERIES")]
+    [Table("SERIESXAMARIN")]
     public class Serie
     {
         [Key]
